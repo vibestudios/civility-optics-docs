@@ -1,7 +1,5 @@
 # Civility Optics Delivery Docs
 
-#### By: Nabil Patel, Katie Carlson, Mithil Verma, Michael Verges, Gioia Rosier
-
 ***
 
 # Backend Installation Guide
