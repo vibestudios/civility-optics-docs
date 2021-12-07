@@ -6,6 +6,59 @@
 
 # Backend Installation Guide
 
+## Pre-requisites
+Make sure you have Node.js version 14.16 and NPM version 6.14 installed: https://nodejs.org/en/download/. You can follow the tutorial provided here: https://phoenixnap.com/kb/install-node-js-npm-on-windows.
+
+To access the project on your local computer, clone the repository on GitHub by running `git clone https://github.com/vibestudios/civility-optics-android.git`.
+
+<br>
+
+If you want to run the backend locally, you must create a `.env` folder in the `backend` directory and define the following environment variables:
+```
+GOOGLE_MAPS_API_KEY="<GOOGLE PLACES API KEY>"
+JWT_KEY="<ANY STRING OF YOUR CHOICE>"
+PORT="<PORT NUMBER (5000 for Windows, 5001 for MAC)>"
+```
+<br>
+Install the required packages by running the following commands in the terminal:
+
+```
+npm install express
+npm install express-async-handler
+npm install mongoose
+npm install cors
+npm install dotenv
+npm install mongodb
+npm install axios
+npm install validator
+npm install bcryptjs
+npm install jsonwebtoken
+npm install nodemailer
+```
+
+## Running
+
+To start the backend service locally, enter the `civility-optics-api/backend` directory and run the command `node server.js` in the terminal.
+
+To run the server to the database, use the command `mongod` anywhere in the terminal.
+
+# Backend Release Notes
+
+#### v 1.0.0, build 1
+
+## Features
+- Post user-submitted ratings for a certain venue to our database.
+- Get user-submitted ratings for a certain venue from our database.
+- Get comments from users about a vertain venur from our database.
+- Create user accounts, login users, and logout users from our system.
+- Leverage Google Places API to return a list of nearby venues based on a user's input
+- Leverage Google Places API to return specific info about a venue.
+
+## Known Issues
+- Some requests are formatted as POST but should really be GET.
+- In getRatings, ratings from the last 30 days should be returned, but all ratings are being returned.
+- In getReviews, null reviews aren't bring filtered out.
+
 ***
 
 # Android Installation Guide
