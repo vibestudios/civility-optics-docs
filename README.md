@@ -49,6 +49,11 @@ To start the backend service locally, enter the `civility-optics-api/backend` di
 
 To run the server to the database, use the command `mongod` anywhere in the terminal.
 
+## Troubleshooting
+- A common issue that may arise is that you'll revieve an error due not having the right environment variables. Please put the correct environment variables in your created `.env` folder before attempting to run the backend.
+- If you are getting a CANNOT GET... or a CANNOT POST... when hitting an endpoint, make sure you are specifying the correct method (POST or GET) with the corresponding endpoint.
+- If you are getting a Status 200 OK but recieving no results, look at your request body and ensure that the values you pass in are correct. A great way to debug API requests is to use a tool called [Postman](https://www.postman.com/)
+
 # Backend Release Notes
 
 #### [v 1.0.0, build 1](https://github.com/vibestudios/civility-optics-api)
