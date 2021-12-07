@@ -1,5 +1,14 @@
 # Civility Optics Delivery Docs
 
+#### Contents
+
+- [Backend Installation Guide](#backend-installation-guide)
+- [Backend Release Notes](#backend-release-notes)
+- [Android Installation Guide](#android-installation-guide)
+- [Android Release Notes](#android-release-notes)
+- [iOS Installation Guide](#ios-installation-guide)
+- [iOS Release Notes](#ios-release-notes)
+
 ***
 
 # Backend Installation Guide
@@ -7,7 +16,7 @@
 ## Pre-requisites
 Make sure you have Node.js version 14.16 and NPM version 6.14 installed: https://nodejs.org/en/download/. You can follow the tutorial provided here: https://phoenixnap.com/kb/install-node-js-npm-on-windows.
 
-To access the project on your local computer, clone the repository on GitHub by running `git clone https://github.com/vibestudios/civility-optics-android.git`.
+To access the project on your local computer, clone [the repository on GitHub](https://github.com/vibestudios/civility-optics-ios) by running `git clone https://github.com/vibestudios/civility-optics-android.git`.
 
 <br>
 
@@ -15,7 +24,7 @@ If you want to run the backend locally, you must create a `.env` folder in the `
 ```
 GOOGLE_MAPS_API_KEY="<GOOGLE PLACES API KEY>"
 JWT_KEY="<ANY STRING OF YOUR CHOICE>"
-PORT="<PORT NUMBER (5000 for Windows, 5001 for MAC)>"
+PORT="<PORT NUMBER (5000 for Windows, 5001 for MacOS)>"
 ```
 <br>
 Install the required packages by running the following commands in the terminal:
@@ -42,7 +51,7 @@ To run the server to the database, use the command `mongod` anywhere in the term
 
 # Backend Release Notes
 
-#### v 1.0.0, build 1
+#### [v 1.0.0, build 1](https://github.com/vibestudios/civility-optics-api)
 
 ## Features
 - Post user-submitted ratings for a certain venue to our database.
@@ -80,7 +89,7 @@ Because you also will need additional disk space to download (if not already pre
 Because we are providing the raw source code for the Civility Optics Android application, in order to successfully access and build the project, you must download Android Studio. Android Studio Arctic Fox 2020.3.1 was the development environment used. You will also need the Android Gradle plugin with a version that is 3.1 or higher, and version 7.0.2 was used during development. The application is written in Java, version 1.8.0_291, so you will need to install the Java Runtime Environment to run the Java application; this can be done by installing the Java SDK (Software Development Kit). Similarly, in order to emulate the application’s build on your computer, you must download a virtual device emulator, which can then show you the functionality of the application. During development the functionality was emulated with the Pixel 3a API 28 (Pie) emulator under the “Phone” category, which can be downloaded by opening the project and navigating to Tools>AVD Manager>Create Virtual Device. 
 
 ## Download Instructions 
-To access the source code locally, clone the repository from the Civility-Optics-Android repo on Github. You can do this by going to the repository on Github and clicking the green “Code” button dropdown, copying the link provided, and then opening Android Studio. From there you can click “Git” from the top task bar, and then pasting the link provided after clicking the “Clone” button. This will give you access to the code that was written for the application.
+To access the source code locally, clone the repository from the [civility-optics-android repo on Github](https://github.com/vibestudios/civility-optics-android). You can do this by going to the repository on Github and clicking the green “Code” button dropdown, copying the link provided, and then opening Android Studio. From there you can click “Git” from the top task bar, and then pasting the link provided after clicking the “Clone” button. This will give you access to the code that was written for the application.
 
 ## Build instructions
 To build the project, you can either navigate to Build>Make Project (Ctrl+F9 on Windows, Command+F9 on Windows), or you can select the hammer (Make Project) button at the top of the window. This will compile your project and bring together the resources and dependencies within the project.
@@ -95,7 +104,7 @@ Emulators can take a long time to launch if multiple processes are running on yo
 
 # Android Release Notes
 
-#### v 1.0.0, build 1
+#### [v 1.0.0, build 1](https://github.com/vibestudios/civility-optics-android)
 
 ## Features:
 - Rating module implementation:
@@ -126,7 +135,7 @@ On MacOS Big Sur (12+), install Xcode (12.3+) from the App Store to get started.
 
 ### 2. Clone the Code
 
-Use git to clone this repository:
+Use git to clone [this repository](https://github.com/vibestudios/civility-optics-ios):
 
 ```
 git clone https://github.com/vibestudios/civility-optics-ios.git
@@ -154,7 +163,7 @@ If you are hosting the backend online, change this url to the public url. This p
 
 # iOS Release Notes
 
-#### v 1.0.0, build 1
+#### [v 1.0.0, build 1](https://github.com/vibestudios/civility-optics-ios)
 
 ## Features
 - Create new accounts
